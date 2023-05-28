@@ -13,7 +13,7 @@
 - name: "Configure user helix settings in '{{ helix_user_config_file_path }}'"
   ansible.builtin.template:
     dest: "{{ helix_user_config_file_path }}"
-    src: "config.j2"
+    src: "config_toml.j2"
     owner: "{{ helix_user_name }}"
     group: "{{ helix_user_name }}"
     mode: '644'
