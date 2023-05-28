@@ -1,0 +1,7 @@
+# global "leader" key: press before a leader map
+keymap_leader: 'space'
+
+# file save/quit
+keymap_leader_save_file: 'w'
+keymap_leader_quit_helix: 'q'
+
