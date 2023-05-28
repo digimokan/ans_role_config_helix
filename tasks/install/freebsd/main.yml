@@ -1,0 +1,7 @@
+- name: "Install the 'helix' application package"
+  ansible.builtin.package:
+    name: helix
+    state: present
+  become: true
+  become_user: root
+

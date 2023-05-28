@@ -1,0 +1,3 @@
+# command to execute to run helix
+helix_main_cmd: 'helix'
+
