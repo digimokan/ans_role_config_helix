@@ -13,6 +13,9 @@ theme = "{{ helix_theme }}"
 ###############################################################################
 
 [keys.normal]
+
+# first, unmap all keys
+
 "a" = "no_op"
 "b" = "no_op"
 "c" = "no_op"
@@ -90,8 +93,8 @@ theme = "{{ helix_theme }}"
 "]" = "no_op"
 "<" = "no_op"
 ">" = "no_op"
-# ":" = "no_op"
-# ";" = "no_op"
+":" = "no_op"
+";" = "no_op"
 "|" = "no_op"
 "\\" = "no_op"
 "," = "no_op"
@@ -111,6 +114,9 @@ theme = "{{ helix_theme }}"
 "^" = "no_op"
 "&" = "no_op"
 "*" = "no_op"
-"-" = "no_op"
 "_" = "no_op"
+
+# mode switching
+
+"{{ keymap_enter_cmd_mode }}" = "command_mode"
 

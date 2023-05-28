@@ -1,0 +1,3 @@
+# enter command-mode, from normal mode
+keymap_enter_cmd_mode: ';'
+
