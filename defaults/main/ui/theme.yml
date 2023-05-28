@@ -1,0 +1,3 @@
+# see available themes: https://github.com/helix-editor/helix/tree/master/runtime/themes
+helix_theme: 'gruvbox'
+

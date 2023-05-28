@@ -1,0 +1,23 @@
+- name: "Create user helix config dir at '{{ user_helix_config_dir }}'"
+  ansible.builtin.file:
+    path: "{{ user_helix_config_dir }}"
+    state: directory
+    owner: "{{ helix_user_name }}"
+    group: "{{ helix_user_name }}"
+    mode: '755'
+  vars:
+    user_helix_config_dir: "{{ helix_user_config_file_path | dirname }}"
+  become: true
+  become_user: root
+
+- name: "Configure user helix settings in '{{ helix_user_config_file_path }}'"
+  ansible.builtin.template:
+    dest: "{{ helix_user_config_file_path }}"
+    src: "config.j2"
+    owner: "{{ helix_user_name }}"
+    group: "{{ helix_user_name }}"
+    mode: '644'
+    force: yes
+  become: true
+  become_user: root
+

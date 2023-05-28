@@ -1,0 +1,3 @@
+# main helix config file path
+helix_user_config_file_path: "/home/{{ helix_user_name }}/.config/helix/config.toml"
+
