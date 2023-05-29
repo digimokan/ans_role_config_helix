@@ -116,7 +116,7 @@ theme = "{{ helix_theme }}"
 "*" = "no_op"
 "_" = "no_op"
 
-# mode switching keymaps
+# normal-mode mode-switching keymaps
 
 "{{ keymap_enter_mode_cmd }}" = "command_mode"
 "{{ keymap_enter_mode_cmd_select }}" = "select_mode"
@@ -127,7 +127,7 @@ theme = "{{ helix_theme }}"
 "{{ keymap_enter_mode_insert_new_line_above }}" = "open_above"
 "{{ keymap_enter_mode_insert_new_line_below }}" = "open_below"
 
-# movement keymaps
+# normal-mode movement keymaps
 
 "{{ move_left_one_char }}" = "move_char_left"
 "{{ move_right_one_char }}" = "move_char_right"
@@ -141,11 +141,11 @@ theme = "{{ helix_theme }}"
 "{{ move_to_line_start }}" = "goto_line_start"
 "{{ move_to_line_end }}" = "goto_line_end"
 
-# toggle keymaps
+# normal-mode toggle keymaps
 
 "{{ toggle_to_last_accessed_file }}" = "goto_last_accessed_file"
 
-# goto keymaps
+# normal-mode goto keymaps
 
 [keys.normal.{{ goto_key_prefix }}]
 
@@ -185,12 +185,97 @@ theme = "{{ helix_theme }}"
 "{{ goto_lsp_references }}" = "goto_reference"
 "{{ goto_lsp_implementation }}" = "goto_implementation"
 
-# leader keymaps
+# normal-mode leader keymaps
 
 [keys.normal.{{ keymap_leader }}]
 
 "{{ keymap_leader_save_file }}" = ":write"
 "{{ keymap_leader_quit_helix }}" = ":quit"
+
+###############################################################################
+# KEYMAPS: SELECT MODE
+###############################################################################
+
+# select-mode movement keymaps
+
+[keys.select]
+
+"a" = "no_op"
+"b" = "no_op"
+"c" = "no_op"
+"d" = "no_op"
+"e" = "no_op"
+"f" = "no_op"
+"g" = "no_op"
+"h" = "no_op"
+"i" = "no_op"
+"j" = "no_op"
+"k" = "no_op"
+"l" = "no_op"
+"m" = "no_op"
+"n" = "no_op"
+"o" = "no_op"
+"p" = "no_op"
+"q" = "no_op"
+"r" = "no_op"
+"s" = "no_op"
+"t" = "no_op"
+"u" = "no_op"
+"v" = "no_op"
+"w" = "no_op"
+"x" = "no_op"
+"y" = "no_op"
+"z" = "no_op"
+"." = "no_op"
+"{{ move_left_one_char }}" = "move_char_left"
+"{{ move_right_one_char }}" = "move_char_right"
+"{{ move_up_one_char }}" = "move_line_up"
+"{{ move_down_one_char }}" = "move_line_down"
+"{{ move_up_one_page }}" = "page_up"
+"{{ move_down_one_page }}" = "page_down"
+"{{ move_to_next_word_start }}" = "move_next_word_start"
+"{{ move_to_next_word_end }}" = "move_next_word_end"
+"{{ move_to_prev_word_start }}" = "move_prev_word_start"
+"{{ move_to_line_start }}" = "goto_line_start"
+"{{ move_to_line_end }}" = "goto_line_end"
+"{{ goto_file_start }}" = "goto_file_start"
+"{{ goto_line_number }}" = "goto_line"
+"{{ goto_file_end }}" = "goto_last_line"
+
+# select-mode goto keymaps
+
+[keys.select.{{ goto_key_prefix }}]
+
+"a" = "no_op"
+"b" = "no_op"
+"c" = "no_op"
+"d" = "no_op"
+"e" = "no_op"
+"f" = "no_op"
+"g" = "no_op"
+"h" = "no_op"
+"i" = "no_op"
+"j" = "no_op"
+"k" = "no_op"
+"l" = "no_op"
+"m" = "no_op"
+"n" = "no_op"
+"o" = "no_op"
+"p" = "no_op"
+"q" = "no_op"
+"r" = "no_op"
+"s" = "no_op"
+"t" = "no_op"
+"u" = "no_op"
+"v" = "no_op"
+"w" = "no_op"
+"x" = "no_op"
+"y" = "no_op"
+"z" = "no_op"
+"." = "no_op"
+"{{ goto_file_start }}" = "goto_file_start"
+"{{ goto_line_number }}" = "goto_line"
+"{{ goto_file_end }}" = "goto_last_line"
 
 ###############################################################################
 # STATUSLINE
