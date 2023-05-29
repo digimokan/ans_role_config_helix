@@ -3,7 +3,7 @@
 # elements to put on left side, center, and right side (see ref for element names)
 statusline_elements_left_side: >-
   "mode",
-  "spinner"
+  "spinner",
   "separator",
   "diagnostics"
 statusline_elements_center: >-
