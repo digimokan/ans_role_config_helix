@@ -2,17 +2,18 @@
 
 # elements to put on left side, center, and right side (see ref for element names)
 statusline_elements_left_side: >-
-  "spinner",
-  "version-control",
   "mode",
-  "file-modification-indicator"
+  "spinner"
 statusline_elements_center: >-
   "file-name"
 statusline_elements_right_side: >-
   "diagnostics",
+  "separator",
   "file-type",
   "file-line-ending",
+  "separator",
   "position",
+  "separator",
   "position-percentage",
   "total-line-numbers"
 
