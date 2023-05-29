@@ -1,3 +1,10 @@
-# enter command-mode, from normal mode
-keymap_enter_cmd_mode: ';'
+# mode keymaps
+keymap_enter_mode_cmd: ';'
+keymap_enter_mode_cmd_select: 'v'
+keymap_enter_mode_insert_before_sel: 'i'
+keymap_enter_mode_insert_after_sel: 'a'
+keymap_enter_mode_insert_line_start: 'I'
+keymap_enter_mode_insert_line_end: 'A'
+keymap_enter_mode_insert_new_line_above: 'O'
+keymap_enter_mode_insert_new_line_below: 'o'
 
