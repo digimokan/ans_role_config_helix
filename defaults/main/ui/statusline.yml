@@ -4,21 +4,20 @@
 statusline_elements_left_side: >-
   "mode",
   "spinner"
+  "separator",
+  "diagnostics"
 statusline_elements_center: >-
   "file-name"
 statusline_elements_right_side: >-
-  "diagnostics",
-  "separator",
   "file-type",
   "file-line-ending",
+  "file-encoding",
   "separator",
   "position",
-  "separator",
-  "position-percentage",
   "total-line-numbers"
 
-# char used to separate elements of statusline
-statusline_separator_char: '|'
+# chars used to separate elements of statusline
+statusline_separator_chars: '   '
 
 # text to show for the "mode" element, for each mode
 statusline_mode_element_text_normal: 'N'
