@@ -120,6 +120,36 @@ theme = "{{ helix_theme }}"
 
 "{{ keymap_enter_cmd_mode }}" = "command_mode"
 
+# movement keymaps
+
+"{{ move_left_one_char }}" = "move_char_left"
+"{{ move_right_one_char }}" = "move_char_right"
+"{{ move_up_one_char }}" = "move_visual_line_up"
+"{{ move_down_one_char }}" = "move_visual_line_down"
+"{{ move_up_one_page }}" = "page_up"
+"{{ move_down_one_page }}" = "page_down"
+"{{ move_to_next_word_start }}" = "move_next_word_start"
+"{{ move_to_next_word_end }}" = "move_next_word_end"
+"{{ move_to_prev_word_start }}" = "move_prev_word_start"
+
+# toggle keymaps
+
+"{{ toggle_to_last_accessed_file }}" = "goto_last_accessed_file"
+
+# goto keymaps
+
+[keys.normal.{{ goto_key_prefix }}]
+
+"{{ goto_file_start }}" = "goto_file_start"
+"{{ goto_file_end }}" = "goto_last_line"
+"{{ goto_file_in_selection }}" = "goto_file"
+"{{ goto_line_start }}" = "goto_line_start"
+"{{ goto_line_end }}" = "goto_line_end"
+"{{ goto_lsp_definition }}" = "goto_definition"
+"{{ goto_lsp_type_definition }}" = "goto_type_definition"
+"{{ goto_lsp_references }}" = "goto_reference"
+"{{ goto_lsp_implementation }}" = "goto_implementation"
+
 # leader keymaps
 
 [keys.normal.{{ keymap_leader }}]

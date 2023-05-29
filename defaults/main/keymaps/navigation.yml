@@ -1,7 +1,28 @@
 # available key names: https://docs.helix-editor.com/remapping.html#special-keys-and-modifiers
 
 # move the cursor by a discrete increment
+move_left_one_char: 'h'
+move_right_one_char: 'l'
+move_up_one_char: 'k'
+move_down_one_char: 'j'
+move_up_one_page: 'PageUp'
+move_down_one_page: 'PageDown'
+move_to_next_word_start: 'w'
+move_to_next_word_end: 'e'
+move_to_prev_word_start: 'b'
 
+# toggle back to the last-accessed file
+toggle_to_last_accessed_file: 'ret'
 
-# go-to specific location
+# go-to specific location (type the prefix first, followed by the key)
+goto_key_prefix: 'g'
+goto_file_start: 'g'
+goto_file_end: 'e'
+goto_file_in_selection: 'f'
+goto_line_start: 'h'
+goto_line_end: 'l'
+goto_lsp_definition: 'd'
+goto_lsp_type_definition: 'y'
+goto_lsp_references: 'r'
+goto_lsp_implementation: 'i'
 
