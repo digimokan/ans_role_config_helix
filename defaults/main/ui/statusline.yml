@@ -1,0 +1,26 @@
+# ref: https://docs.helix-editor.com/configuration.html#editorstatusline-section
+
+# elements to put on left side, center, and right side (see ref for element names)
+statusline_elements_left_side: >-
+  "spinner",
+  "version-control",
+  "mode",
+  "file-modification-indicator"
+statusline_elements_center: >-
+  "file-name"
+statusline_elements_right_side: >-
+  "diagnostics",
+  "file-type",
+  "file-line-ending",
+  "position",
+  "position-percentage",
+  "total-line-numbers"
+
+# char used to separate elements of statusline
+statusline_separator_char: '|'
+
+# text to show for the "mode" element, for each mode
+statusline_mode_element_text_normal: 'N'
+statusline_mode_element_text_insert: 'I'
+statusline_mode_element_text_select: 'S'
+

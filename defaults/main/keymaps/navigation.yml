@@ -1,2 +1,7 @@
 # available key names: https://docs.helix-editor.com/remapping.html#special-keys-and-modifiers
-  
+
+# move the cursor by a discrete increment
+
+
+# go-to specific location
+

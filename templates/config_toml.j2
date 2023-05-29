@@ -9,7 +9,7 @@
 theme = "{{ helix_theme }}"
 
 ###############################################################################
-# NORMAL MODE
+# KEYMAPS: NORMAL MODE
 ###############################################################################
 
 [keys.normal]
@@ -116,13 +116,28 @@ theme = "{{ helix_theme }}"
 "*" = "no_op"
 "_" = "no_op"
 
-# mode switching
+# mode switching keymaps
 
 "{{ keymap_enter_cmd_mode }}" = "command_mode"
 
 # leader keymaps
 
 [keys.normal.{{ keymap_leader }}]
+
 "{{ keymap_leader_save_file }}" = ":write"
 "{{ keymap_leader_quit_helix }}" = ":quit"
+
+###############################################################################
+# STATUSLINE
+###############################################################################
+
+[editor.statusline]
+
+left = [{{ statusline_elements_left_side }}]
+center = [{{ statusline_elements_center }}]
+right = [{{ statusline_elements_right_side }}]
+separator = "{{ statusline_separator_char }}"
+mode.normal = "{{ statusline_mode_element_text_normal }}"
+mode.insert = "{{ statusline_mode_element_text_insert }}"
+mode.select = "{{ statusline_mode_element_text_select }}"
 
