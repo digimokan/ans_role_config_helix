@@ -16,6 +16,7 @@ toggle_to_last_accessed_file: 'ret'
 
 # go-to specific location (type the prefix first, followed by the key)
 goto_key_prefix: 'g'
+goto_line_number: 'n'
 goto_file_start: 'g'
 goto_file_end: 'e'
 goto_file_in_selection: 'f'
