@@ -185,19 +185,20 @@ theme = "{{ helix_theme }}"
 "{{ goto_lsp_references }}" = "goto_reference"
 "{{ goto_lsp_implementation }}" = "goto_implementation"
 
-# normal-mode text-mod surround keymaps
+# normal-mode change keymaps
 
-[keys.normal.{{ text_mod_key_super_prefix }}]
+"{{ change_case_to_upper }}" = "switch_to_uppercase"
+"{{ change_case_to_lower }}" = "switch_to_lowercase"
 
-"{{ surround_mod_replace_x_with_y }}" = "surround_replace"
+# normal-mode match keymaps
 
-# normal-mode text-mod case keymaps
+[keys.normal.{{ match_key_prefix }}]
 
-[keys.normal.{{ text_mod_key_super_prefix }}.{{ case_mod_key_sub_prefix }}]
-
-"{{ case_mod_to_upper }}" = "switch_to_uppercase"
-"{{ case_mod_to_lower }}" = "switch_to_lowercase"
-"{{ case_mod_toggle }}" = "switch_case"
+"{{ select_inside_text_object }}" = "select_textobject_inner"
+"{{ select_around_text_object }}" = "select_textobject_around"
+"{{ surround_text_object_with_x }}" = "surround_add"
+"{{ replace_surrounding_x_with_y_on_text_object }}" = "surround_replace"
+"{{ delete_surrounding_x_from_text_object }}" = "surround_delete"
 
 # normal-mode leader keymaps
 
@@ -216,6 +217,7 @@ theme = "{{ helix_theme }}"
 
 "{{ move_to_line_start }}" = "goto_line_start"
 "{{ move_to_line_end }}" = "goto_line_end"
+"ret" = "normal_mode"
 
 # select-mode goto keymaps
 

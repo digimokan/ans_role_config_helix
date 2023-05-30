@@ -1,0 +1,14 @@
+# Note: "match" is a sub-mode of normal mode
+
+# match prefix
+match_key_prefix: 'm'
+
+# select keymaps
+select_inside_text_object: 'i'
+select_around_text_object: 'a'
+
+# surround keymaps
+surround_text_object_with_x: 's'
+replace_surrounding_x_with_y_on_text_object: 'r'
+delete_surrounding_x_from_text_object: 'd'
+

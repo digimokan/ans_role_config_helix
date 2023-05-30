@@ -17,6 +17,7 @@ move_to_line_end: 'minus'
 toggle_to_last_accessed_file: 'ret'
 
 # go-to specific location (type the prefix first, followed by the key)
+# Note: "go-to" is a sub-mode of normal mode
 goto_key_prefix: 'g'
 goto_line_number: 'n'
 goto_file_start: 'g'

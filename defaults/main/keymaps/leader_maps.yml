@@ -1,4 +1,5 @@
 # global "leader" key: press before a leader map
+# Note: "leader" is sub-mode of normal mode
 keymap_leader: 'space'
 
 # file save/quit
