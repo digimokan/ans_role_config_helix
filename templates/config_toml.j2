@@ -185,6 +185,20 @@ theme = "{{ helix_theme }}"
 "{{ goto_lsp_references }}" = "goto_reference"
 "{{ goto_lsp_implementation }}" = "goto_implementation"
 
+# normal-mode text-mod surround keymaps
+
+[keys.normal.{{ text_mod_key_super_prefix }}]
+
+"{{ surround_mod_replace_x_with_y }}" = "surround_replace"
+
+# normal-mode text-mod case keymaps
+
+[keys.normal.{{ text_mod_key_super_prefix }}.{{ case_mod_key_sub_prefix }}]
+
+"{{ case_mod_to_upper }}" = "switch_to_uppercase"
+"{{ case_mod_to_lower }}" = "switch_to_lowercase"
+"{{ case_mod_toggle }}" = "switch_case"
+
 # normal-mode leader keymaps
 
 [keys.normal.{{ keymap_leader }}]
