@@ -54,7 +54,7 @@ Install and configure the helix text editor.
        - name: "Install and configure the helix text editor"
          ansible.builtin.include_role:
            name: ans_role_config_helix
-           public: yes
+           public: true
    ```
 
 ## Role Options
